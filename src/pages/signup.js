@@ -43,7 +43,7 @@ export default function Signup() {
 
     return  (
         <>
-                <HeaderContainer>
+         <HeaderContainer>
             <Form>
                 <Form.Title>Sign Up</Form.Title>
                 {error && <Form.Error>{error}</Form.Error>}

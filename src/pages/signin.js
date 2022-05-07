@@ -1,9 +1,15 @@
 import React, {useState, useContext} from "react";
+import { useHistory } from "react-router-dom";
+import {FirebaseContext} from "../context/firebase"
 import {Form} from "../components"
 import { FooterContainer } from "../containers/footer";
 import { HeaderContainer } from "../containers/header";
+import * as ROUTES from "../constants/routes";
 
 export default function Signin() {
+    const history = useHistory()
+    const { firebase } = useContext(FirebaseContext)
+
     const [emailAddress, setEmailAddress] = useState('')
     const [password, setPassword] = useState('')
     const [error, setError] = useState('')
@@ -14,7 +20,18 @@ export default function Signin() {
         event.preventDefault()
 
         // firebase work here!
-
+        firebase
+            .auth()
+            .signInWithEmailAndPassword(emailAddress, password)
+            .then(() => {
+                // push to the browse page
+                history.push(ROUTES.BROWSE)
+            })
+            .catch((error) => {
+                setEmailAddress('')
+                setPassword('')
+                setError(error.message)
+            })
     }
 
     return (
@@ -40,7 +57,6 @@ export default function Signin() {
                         Sign In
                     </Form.Submit>
                 </Form.Base>
-
                 <Form.Text>
                     New to Netflix? <Form.Link to="/signup">Sign Up now.</Form.Link>
                 </Form.Text>

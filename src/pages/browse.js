@@ -1,14 +1,18 @@
 
+import { BrowseContainer } from "../containers/browse"
 import { useContent } from "../hooks"
+import selectionFilter from "../utils/selection-filter"
 
 export default function Browse() {
 
     // we nee the series and the films
     const { series } = useContent('series')
     const { films } = useContent('films')
-    console.table(series)
-    console.table(films)
-    // we need slides
+    // console.table(series)
+    // console.table(films)
+
+    const slides = selectionFilter({series, films})
+
     // pass it to the browse container
-    return <p>Hello form the Browse!</p>
+    return <BrowseContainer slides={slides} />
 }

@@ -10,8 +10,8 @@ export default function App() {
   console.log(user);
 
   return (
-    <Router>
-      <Switch>
+    <Router  forceRefresh={true}>
+      <Switch >
         <IsUserRedirect
           user={user}
           loggedInPath={ROUTES.BROWSE}
@@ -26,14 +26,13 @@ export default function App() {
         >
           <Signup />
         </IsUserRedirect>
-        <ProtectedRoute user={user} path={ROUTES.BROWSE} exact>
+        <ProtectedRoute user={user} path={ROUTES.BROWSE} >
           <Browse />
         </ProtectedRoute>
         <IsUserRedirect
           user={user}
           loggedInPath={ROUTES.BROWSE}
           path={ROUTES.HOME}
-          exact
         >
           <Home />
         </IsUserRedirect>

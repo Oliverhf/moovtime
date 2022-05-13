@@ -9,7 +9,7 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-router-dom": "5.2.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "3.4.0",
     "style-components": "^0.1.0",
     "styled-components": "^5.2.1",
     "web-vitals": "^2.1.0"
@@ -38,10 +38,41 @@
       "last 1 safari version"
     ]
   },
+  "jest": {
+    "collectCoverageFrom": [
+      "<rootDir>/src/**/*.js",
+      "!<rootDir>/src/app.js",
+      "!<rootDir>/src/helpers/routes.js",
+      "!<rootDir>/src/lib/firebase.js",
+      "!<rootDir>/src/lib/firebase.prod.js",
+      "!<rootDir>/src/index.js",
+      "!<rootDir>/src/seed.js",
+      "!<rootDir>/src/utils/index.js",
+      "!<rootDir>/src/pages/index.js",
+      "!<rootDir>/src/global-styles.js",
+      "!<rootDir>/src/components/index.js",
+      "!<rootDir>/src/firebase.prod.js",
+      "!<rootDir>/src/hooks/*.js",
+      "!<rootDir>/src/context/*.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    },
+    "coverageReporters": [
+      "html",
+      "text"
+    ]
+  },
   "devDependencies": {
-    "eslint": "^8.14.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
-    "@testing-library/user-event": "^13.2.1"
+    "@testing-library/user-event": "^13.2.1",
+    "eslint": "^8.14.0",
+    "react-test-render": "^1.1.2"
   }
 }

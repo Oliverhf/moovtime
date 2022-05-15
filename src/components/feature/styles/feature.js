@@ -6,8 +6,6 @@ export const Container = styled.div`
   border-bottom: 8px solid #222;
   text-align: center;
   padding: 165px 0;
-  max-width: 75%;
-  margin: 0 auto;
 `;
 
 export const Title = styled.h1`
@@ -28,5 +26,15 @@ export const SubTitle = styled.h2`
   margin: 16px auto;
   @media (max-width: 600px) {
     font-size: 18px;
+  }
+`;
+
+export const Wrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  max-width: 75%;
+  margin: 0 auto;
+  @media (max-width: 600px) {
+    font-size: 35px;
   }
 `;

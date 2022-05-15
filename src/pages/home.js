@@ -10,11 +10,14 @@ export default function Home() {
     <React.Fragment>
       <HeaderContainer>
         <Feature>
-          <Feature.Title>Unlimited films, TV prgrammes and more.</Feature.Title>
-          <Feature.SubTitle>
-            Watch anywhere. Cancel at any time.
-          </Feature.SubTitle>
-          <OptForm>
+          <Feature.Wrap>
+            <Feature.Title>Unlimited films, TV prgrammes and more.</Feature.Title>
+            <Feature.SubTitle>
+              Watch anywhere. Cancel at any time.
+            </Feature.SubTitle>
+
+
+            <OptForm>
             <OptForm.Input placeholder="Email address" />
             <OptForm.Button>Try it now</OptForm.Button>
             <OptForm.Text>
@@ -22,6 +25,7 @@ export default function Home() {
               membership
             </OptForm.Text>
           </OptForm>
+          </Feature.Wrap>
         </Feature>
       </HeaderContainer>
       <JumbotronContainer />

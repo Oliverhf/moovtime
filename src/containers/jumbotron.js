@@ -16,7 +16,7 @@ export function JumbotronContainer() {
                 <Jumbotron.SubTitle>{item.subTitle}</Jumbotron.SubTitle>
               </Jumbotron.Pane>
               <Jumbotron.Pane>
-              <Jumbotron.Image src={item.image} title={item.alt} />
+              <Jumbotron.Image src={item.image} title={item.alt} alt={item.alt}/>
               </Jumbotron.Pane>
           </Jumbotron>
         ))}

@@ -20,6 +20,7 @@ export function SelectProfileContainer({user, setProfile}) {
                         onClick={() => setProfile({
                         displayName: user.displayName, 
                         phototURL: user.photoURL})}
+                        data-testid="user-profile"
                     >
                         <Profiles.Picture src={user.photoURL} />
                         <Profiles.Name>{user.displayName}</Profiles.Name>

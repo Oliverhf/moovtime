@@ -7,7 +7,7 @@ import { HeaderContainer } from "../containers/header";
 import * as ROUTES from "../constants/routes";
 
 
-export default function Signup() {
+export default function SignUp() {
     const history = useHistory()
     const { firebase } = useContext(FirebaseContext)
 
@@ -66,7 +66,7 @@ export default function Signup() {
                         value={password}
                         onChange={({target}) => setPassword(target.value)}
                     />
-                    <Form.Submit disabled={isInvalid} type="submit">Sign Up</Form.Submit>
+                    <Form.Submit data-testid="sign-up" disabled={isInvalid} type="submit">Sign Up</Form.Submit>
 
                     <Form.Text>
                         Already a user? <Form.Link to="/signin">Sign in now.</Form.Link>

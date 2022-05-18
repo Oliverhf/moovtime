@@ -92,7 +92,7 @@ export const SearchIcon = styled.button`
 
 export const ButtonLink = styled(ReactRouterLink)`
   display: block;
-  background-color: #e50914;
+  background-color:  #BD632F;
   width: 84px;
   height: fit-content;
   color: white;
@@ -103,7 +103,7 @@ export const ButtonLink = styled(ReactRouterLink)`
   cursor: pointer;
   text-decoration: none;
   &:hover {
-    background: #f40612;
+    background:  #e47e44;
   }
 `;
 
@@ -190,12 +190,12 @@ export const Text = styled.p`
 `;
 
 export const Logo = styled.img`
-  height: 36px;
-  width: 134px;
+  height: 69px;
+  width: 180px;
   margin-right: 40px;
   @media (min-width: 1449px) {
-    height: 45px;
-    width: 167px;
+    height: 69px;
+    width: 180px;
   }
 `;
 
@@ -213,7 +213,7 @@ export const PlayButton = styled.button`
   cursor: pointer;
   transition: background-color 0.5s ease;
   &:hover {
-    background-color: #ff1e1e;
+    background-color: #BD632F;
     color: white;
   }
 `;

@@ -9,14 +9,14 @@ import 'firebase/compat/auth'
 // we need a config here
 
 const config = {
-    apiKey: "AIzaSyD7c62Ga5Br7tO7udZtqGEnJ0wFbXUyyqQ",
-    authDomain: "netflix-458f4.firebaseapp.com",
-    projectId: "netflix-458f4",
-    storageBucket: "netflix-458f4.appspot.com",
-    messagingSenderId: "650107679092",
-    appId: "1:650107679092:web:6e4a780b3c80ff4ba47c21"
-}
-
+    apiKey: "AIzaSyDKrJ1iWKzYqzlNA2BYsoSc0wxGFuxFLc4",
+    authDomain: "moovtime-58e7e.firebaseapp.com",
+    projectId: "moovtime-58e7e",
+    storageBucket: "moovtime-58e7e.appspot.com",
+    messagingSenderId: "465471833133",
+    appId: "1:465471833133:web:8f201854a3b6b726aea4a4"
+};
+  
 
 const firebase = Firebase.initializeApp(config)
 

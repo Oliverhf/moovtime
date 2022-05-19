@@ -38,7 +38,7 @@ describe('<Header />', () => {
 
   it('renders the full <Header> with a background', () => {
     const { container, getByText, getByTestId } = render(
-      <Header src="joker1" dontShowOnSmallViewPort>
+      <Header src="thewayofthegun" dontShowOnSmallViewPort>
         <Header.Frame>
           <Header.Group>
             <Header.Logo src="/images/logo.svg" alt="Netflix" />

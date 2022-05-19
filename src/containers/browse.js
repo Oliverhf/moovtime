@@ -49,7 +49,7 @@ export function BrowseContainer({ slides }) {
   return profile.displayName ? (
     <>
       {loading ? <Loading src={user?.photoURL} /> : <Loading.ReleaseBody />}
-      <Header src="joker1" dontShowOnSmallViewPort>
+      <Header src="thewayofthegun" dontShowOnSmallViewPort>
           <Header.Frame>
               <Header.Group>
                 <Header.Logo to={ROUTES?.HOME} src={logo} alt="Netflix" />
@@ -84,11 +84,9 @@ export function BrowseContainer({ slides }) {
           </Header.Frame>
 
           <Header.Feature>
-          <Header.FeatureCallOut>Watch joker Now</Header.FeatureCallOut>
+          <Header.FeatureCallOut>Watch The Way Of The Gun Now</Header.FeatureCallOut>
             <Header.Text>
-                Forever alone in a crowd, failed comedian Arthur Fleck seeks connection as he walks the streets of Gotham
-                City. Arthur wears two masks -- the one he paints for his day job as a clown, and the guise he projects in a
-                futile attempt to feel like he's part of the world around him.
+            Parker (Ryan Phillippe) and Longbaugh (Benicio Del Toro) are longtime partners and decide to make some easy money. The plan is to kidnap young Robin, who is pregnant with the child of a wealthy couple. But ruthless Longbaugh is emotionally suspicious by his partner interested in Robin, with the kidnapping and putting the two of them in big trouble. The day of the delivery of the ransom approaches and the friends are armed to face their armed confrontations.
             </Header.Text>
             <Header.PlayButton>Play</Header.PlayButton>
           </Header.Feature>

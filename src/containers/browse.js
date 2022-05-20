@@ -25,6 +25,7 @@ export function BrowseContainer({ slides }) {
     setTimeout(() => {
       setLoading(false);
     }, 3000);
+    // eslint-disable-next-line 
   }, [profile.displayName]);
 
 
@@ -43,6 +44,7 @@ export function BrowseContainer({ slides }) {
     } else {
       setSlideRows(slides[category])
     }
+    // eslint-disable-next-line 
   },[searchTerm])
 
 

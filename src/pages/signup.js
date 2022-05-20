@@ -18,11 +18,11 @@ export default function SignUp() {
 
 
     const isInvalid = firstName === '' || password === '' || emailAddress === ''
+
+    var userPhoto = Math.floor(Math.random() * 5) + 1
+
     const handleSignup = (event) => {
         event.preventDefault()
-
-        var userPhoto = Math.floor(Math.random() * 5) + 1
-
         firebase
             .auth()
             .createUserWithEmailAndPassword(emailAddress, password)

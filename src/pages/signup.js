@@ -15,11 +15,10 @@ export default function SignUp() {
     const [emailAddress, setEmailAddress] = useState('')
     const [password, setPassword] = useState('')
     const [error, setError] = useState('')
+    const [userPhoto, setUserPhoto] = useState(Math.floor(Math.random() * 5) + 1)
 
 
     const isInvalid = firstName === '' || password === '' || emailAddress === ''
-
-    var userPhoto = Math.floor(Math.random() * 5) + 1
 
     const handleSignup = (event) => {
         event.preventDefault()

@@ -1,7 +1,7 @@
 {
   "name": "moovtime",
   "version": "0.1.0",
-  "homepage": "https:https://moovtime.netlify.app",
+  "homepage": "https://moovtime.netlify.app/",
   "private": true,
   "dependencies": {
     "firebase": "^9.7.0",

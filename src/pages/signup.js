@@ -21,6 +21,8 @@ export default function SignUp() {
     const handleSignup = (event) => {
         event.preventDefault()
 
+        var userPhoto = Math.floor(Math.random() * 5) + 1
+
         firebase
             .auth()
             .createUserWithEmailAndPassword(emailAddress, password)
@@ -28,7 +30,7 @@ export default function SignUp() {
                 result.user
                 .updateProfile({
                     displayName: firstName,
-                    photoURL: Math.floor(Math.random() * 5) + 1,
+                    photoURL: userPhoto,
                 }).then(() => {
                     history.push(ROUTES.BROWSE)
                 })

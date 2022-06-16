@@ -10,7 +10,7 @@ Build from Scratch an application using React (Custom Hooks, Context), Firebase 
 
 There are four pages within this application: sign in, sign up, browse & lastly the homepage.
 
-**Note:** Some pages are using **protected routes** with auth listeners. **Firebase firestore** handles all the data and that data is retrieved using a custom hook. The authentication feature is used on all pages, wich is handled by Firebase as well.
+**Note:** Some pages are using **protected routes** with auth listeners. **Firebase firestore** handles all the data and that data is retrieved using a custom hook. The authentication feature is used on all pages, which is handled by Firebase as well.
 
 ## Design Pattern: 
 
